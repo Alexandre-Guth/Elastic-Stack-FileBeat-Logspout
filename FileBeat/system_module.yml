@@ -1,0 +1,20 @@
+#-------------------- System Module ------------------
+
+# This file has to be created in directory set up in the filebeat.yml file.
+# The default path is: /etc/filebeat/module.d/
+# You can add custom fields and tags
+
+- module: system
+  # Syslog
+  syslog:
+    enabled: true
+    prospector:
+      tags:
+        syslog
+
+  # Authorization logs
+  auth:
+    enabled: true
+    prospector:
+      tags:
+        auth
