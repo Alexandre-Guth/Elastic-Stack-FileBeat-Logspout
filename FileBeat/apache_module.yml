@@ -1,0 +1,24 @@
+#-------------------- Apache2 Module ------------------
+
+# This file has to be created in directory set up in the filebeat.yml file.
+# The default path is: /etc/filebeat/module.d/
+# You can add custom fields and tags
+
+- module: apache2
+  # Access logs
+  access:
+    enabled: true
+    prospector:
+      fields:
+        your.custom.field: anything-you-want
+      tags:
+        apache2.access
+
+ # Access logs
+  error:
+    enabled: true
+    prospector:
+      fields:
+        your.custom.field: anything-you-want
+      tags:
+        apache2.error
