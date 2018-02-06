@@ -1,0 +1,22 @@
+###########################
+#   FILEBEAT LOGS CONF
+###########################
+
+# This file has to be created in directory set up in the filebeat.yml file.
+# The default path is: /etc/filebeat/prospectors.d/
+
+# Add as many log files you want to ship 
+# You can create several yml files in the prospectors.d directory
+# It is important to tag the files you ship in order to filter them in Logstash
+
+- type: log
+  enabled: true
+  paths:
+    - /var/log/kern.log
+  tags: ["kern"]
+
+- type: log
+  enabled: true
+  paths:
+    - /var/log/daemon.log
+  tags: ["daemon"]
