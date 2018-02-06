@@ -1,0 +1,16 @@
+version: '2'
+services:
+  logspout:
+    image: bekt/logspout-logstash
+    environment:
+      ROUTE_URIS: logstash://10.1.20.53:5000
+      LOGSPOUT: ignore
+      RETRY_SEND: 'true'
+      LOGSTASH_FIELDS: fileset.module=logspout
+      DOCKER_LABELS: 'true'
+    stdin_open: true
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    tty: true
+    labels:
+      io.rancher.container.pull_image: always
