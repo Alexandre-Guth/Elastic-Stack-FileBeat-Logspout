@@ -1,0 +1,37 @@
+###########################
+#   FILEBEAT CONF
+###########################
+
+# Change the ip adress to fit your network configuration
+
+#================= Filebeat prospectors ================
+
+Filebeat.config.prospectors:
+  enabled: true
+  path: /etc/filebeat/prospectors.d/*.yml
+
+#================== Filebeat modules ===================
+
+filebeat.modules:
+
+#---------- Modules configuration ----------------------
+filebeat.config.modules:
+  path: ${path.config}/modules.d/*.yml
+  reload.enabled: false
+
+#============ Elasticsearch template setting ============
+
+setup.template.settings:
+  index.number_of_shards: 3
+
+#======================== Kibana ========================
+
+setup.kibana:
+  host: "127.0.0.1:80"
+  setup.dashboards.enabled: true
+  setup.dashboards.always_kibana: true
+
+#=================== Logstash output ====================
+
+output.logstash:
+  hosts: ["127.0.0.1:6000"]
