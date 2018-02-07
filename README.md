@@ -32,3 +32,5 @@ To achieve an Elastic Stack deployment, you will need knowledge in the following
 3. Check the [official documentation](https://www.elastic.co/guide/index.html)
 4. Prepare a lot of coffee
 5. Deploy!
+
+**Please feel free to ask questions, make comments or suggestions to improve this repository**
