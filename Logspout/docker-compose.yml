@@ -7,6 +7,7 @@ services:
       ROUTE_URIS: logstash://127.0.0.1:5000
       LOGSPOUT: ignore
       RETRY_SEND: 'true'
+      # You can add custom fields like this one:
       LOGSTASH_FIELDS: fileset.module=logspout
       DOCKER_LABELS: 'true'
     stdin_open: true
