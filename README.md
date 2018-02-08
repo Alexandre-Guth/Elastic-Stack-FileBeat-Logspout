@@ -3,7 +3,7 @@ On behalf of my employer [Phospore SI](https://www.phosphore.eu/), I deployed an
 
 ### What you'll find here
 
-All the different configurations files for the softwares we deployed plus a [wiki](https://github.com/Alexandre-Guth/Elastic-Stack-FileBeat-Logspout/wiki) with instructions.
+All the different configurations files for the softwares we deployed plus a **[wiki](https://github.com/Alexandre-Guth/Elastic-Stack-FileBeat-Logspout/wiki) with instructions**.
 I highly recommend to have a look at the attached [wiki](https://github.com/Alexandre-Guth/Elastic-Stack-FileBeat-Logspout/wiki) before starting deploying and of course the [official documentation](https://www.elastic.co/guide/index.html).
 
 We deployed the Elastic Stack on a single node to start with and do our test. In production, we will deploy a 3 nodes Elastic cluster.
@@ -30,7 +30,7 @@ To achieve an Elastic Stack deployment, you will need knowledge in the following
 1. Read the [wiki](https://github.com/Alexandre-Guth/Elastic-Stack-FileBeat-Logspout/wiki) first
 2. Pay attention to the [prerequisites](https://github.com/Alexandre-Guth/Elastic-Stack-FileBeat-Logspout/wiki/2.-Prerequisites)
 3. Check the [official documentation](https://www.elastic.co/guide/index.html)
-4. Prepare a lot of coffee
+4. Make a lot of coffee (you can actually do that first)
 5. Deploy!
 
 **Please feel free to ask questions, make comments or suggestions to improve this repository**
