@@ -1,0 +1,9 @@
+###########################
+#   FILEBEAT ODOO CONF
+###########################
+
+- type: log
+  enabled: true
+  paths:
+    - /var/log/odoo/syslog
+  tags: ["odoo"]
