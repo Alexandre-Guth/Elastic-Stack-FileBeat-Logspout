@@ -11,6 +11,8 @@ ELK aka Elasticsearch-Logstash-Kibana is evolving fast, we deployed a 6.0.1 Elas
 
 We deployed our Elastic Stack in a Rancher environment but this documentation can be used in any environment involving Docker containers. We work with Ubuntu servers so all the commands you will find here are deb.
 
+There are also configuration files to ship [Odoo](https://www.odoo.com/) logs since [Phospore SI](https://www.phosphore.eu/) is an Odoo partner. We are still working on it so I won't document it that much. I'll leave them here for whoever it could help.
+
 ### Prerequisites
 
 To achieve an Elastic Stack deployment, you will need knowledge in the following:
